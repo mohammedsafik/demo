@@ -14,4 +14,5 @@ print:string = ""
   receive(value: string) {
     this.print=value
   }
+  visible = false;
 }

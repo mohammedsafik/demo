@@ -9,9 +9,7 @@ import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 })
 export class Child {
   @Input() data!: string;
-
   @Output() send = new EventEmitter<string>();
-
   notifyparent() {
     this.send.emit("hello"); // send actual data
   }
